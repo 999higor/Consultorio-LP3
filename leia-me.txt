@@ -1,0 +1,10 @@
+trocar as bases de dados dependendo da versão que você for usar
+
+ // sql server 2015 ifrs
+        //static string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Administrador\Documents\Visual Studio 2015\Projects\consultorio.mdf';Integrated Security=True;Connect Timeout=30";
+
+//sql server 2017 pc
+static string connection = @"Data Source=HIGOR\SQLEXPRESS;Initial Catalog=consultorio;Integrated Security=True;Pooling=False";
+
+
+comentar a linha na pasta DAL para a string QUE NAO FOR USAR !
