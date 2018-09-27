@@ -12,11 +12,13 @@ namespace Trabson.DAL
 
     {   //sql server 2015 ifrs
         //static string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Administrador\Documents\Visual Studio 2015\Projects\consultorio.mdf';Integrated Security=True;Connect Timeout=30";
-        
-        //sql server 2017 pc
-        static string connection = @"Data Source=HIGOR\SQLEXPRESS;Initial Catalog=consultorio;Integrated Security=True;Pooling=False";
 
-        
+        //sql server 2017 pc
+        //static string connection = @"Data Source=HIGOR\SQLEXPRESS;Initial Catalog=consultorio;Integrated Security=True;Pooling=False";
+
+        //bd 2015
+        static string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\higor\Documents\GitHub\Consultorio-LP3\BD 2015\consultorio.mdf';Integrated Security=True;Connect Timeout=30";
+
         public static int Cadastrar(string pNomeMedico, string pCRM)
         {
             string cmd = "Insert Into Medico (nomeMedico, CRM) values (@nomeMedico, @CRM)";
